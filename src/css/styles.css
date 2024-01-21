@@ -11,7 +11,7 @@
   padding-left: 16px;
   padding-right: 16px;
   outline: none;
-  transition: border 0.3s, color 0.3s;
+
   color: #808080;
   font-family: Montserrat;
   font-size: 16px;
@@ -23,13 +23,12 @@
 
 .input:hover {
   border: 1px solid #000;
-
+  ;
 }
 
 .input:focus {
   border: 1px solid #4E75FF;
   color: #2E2F42;
-
 }
 
 .button-search {
@@ -41,7 +40,7 @@
   border-radius: 8px;
   background: #4E75FF;
   border: none;
-  transition: background 0.4s, color 0.4s;
+
   color: #FFF;
   font-family: Montserrat;
   font-size: 16px;
@@ -54,16 +53,40 @@
 .button-search:hover {
   background: #6C8CFF;
   cursor: pointer;
+}
 
+.button-load-more {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 46%;
+  display: none;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4E75FF;
+  border: none;
+
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.button-load-more:hover {
+  background: #6C8CFF;
+  cursor: pointer;
 }
 
 .photo-container {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  justify-content: center;
-
-
+  justify-content: center
 }
 
 .photo-card {
@@ -73,37 +96,38 @@
   border-radius: 4px;
 }
 
-
 .photo {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 200px;
-
-
 }
 
-.info-container {
+.info {
   display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #f0f0f0;
   flex-direction: row;
   width: 360px;
-  justify-content: space-around;
-
-
+  justify-content: space-around
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.label {
+  font-weight: bold;
 }
+
+.value {
+  margin-top: 5px;
+}
+
+.label,
+.value {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .loader {
   width: 48px;
@@ -119,17 +143,12 @@
   display: none;
 }
 
-.label-likes {
-  font-weight: bold;
-}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
 
-.value {
-  margin-top: 5px;
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-.label-likes,
-.value {
-  display: flex;
-  justify-content: center;
-}
-
